@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html ng-app="photoBrowser">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">  
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/Script.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="Default.html" class="navbar-brand">CloudDashPrac</a>
+            </div><!-- Navbar Header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                
+                <ul class="nav navbar-nav">s
+                    <li><a href="Evidence.html">Evidence</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">AboutUs</a></li>
+                </ul>
+            </div>
+        </div><!-- End Container -->
+    </nav><!-- End navbar -->
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Jumbotron/Header based style -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Learning Phase Evidence</h1>
+            <p>Just a collection of the images of the websites we've used and work we've done to aid the learning phase</p>
+        </div><!-- End Container -->
+    </div><!-- End jumbotron -->
+
+    <!-- Evidence Album Gallery -->
+    <div ng-controller="photoList" class="container">
+        <div class="row">
+            <p style="text-align: center">Filter evidence with search bar</p>
+            <input type="text" class="form-control" ng-model="search.title"/>
+        </div>
+        <div class="row">
+           <div ng-repeat="image in images | filter:search" class="col-sm-6">
+               <h1>{{image.title}}</h1>
+               <img ng-src="{{image.url}}" width="500"/>
+           </div>
+        </div>
+       
+    </div>
+
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

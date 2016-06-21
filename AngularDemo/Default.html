@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title>Clouddashboardprac</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href="Content/Styles.css" rel="stylesheet" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/Script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="Default.html" class="navbar-brand">CloudDashPrac</a>
+            </div><!-- Navbar Header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+            
+                <ul class="nav navbar-nav">
+                    <li><a href="Evidence.html">Evidence</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">AboutUs</a></li>
+                </ul>
+            </div>
+        </div><!-- End Container -->
+    </nav><!-- End navbar -->
+
+    <!-- Jumbotron/Header based style -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>CloudDashPrac App</h1>
+            <p>Practice web application hosted on Azure. Contains evidence of our teams learning phase</p>
+        </div><!-- End Container -->
+    </div><!-- End jumbotron -->
+
+    <div class="container">
+        <section>
+            <div class="page-header" id="feedback">
+                <h2>Project Team Quotes. <small>Some quotes from the project team</small></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <blockquote>
+                        <p>"Because of this Research and Development course, 
+                        I get the great opportunity to apply my practical and communicational 
+                        skills in a team-based, ‘real-as-it-gets’ project"</p>
+                        <footer>Leng Am</footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-3">
+                    <blockquote>
+                        <p>"I had undertaken this project as part of my R&D group. What really 
+                        boggles my mind is that we are dealing with people in the industry and providing 
+                        a product that will be used by another organisation."</p>
+                        <footer>Jason Singh</footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-3">
+                    <blockquote>
+                        <p>"I didn’t realise at the time of the making of the team contract how 
+                        important it was. Initially I thought it would be something to get out of the 
+                        way to move on to more important work."</p>
+                        <footer>Joshua Woodhouse</footer>
+                    </blockquote>
+                </div>
+                <div class="col-lg-3">
+                    <blockquote>
+                        <p>"I took my learning session at home so it gave me a feeling that 
+                        everything was self-managed and I could write down the work log on the other day"</p>
+                        <footer>Yuhan Shen</footer>
+                    </blockquote>
+                </div>
+            </div><!-- End Row -->
+        </section>
+    </div><!-- End Container -->
+
+    <div class="container">
+        <section>
+            <div class="page-header" id="gallery">
+                <h3>Gallery <small>Learning evidence using bootstrap carousel</small></h3>
+            </div>
+            <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+                    <li data-target="#screenshot-carousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/CSharp 3.jpg" alt="Csharp"/>
+                        <div class="carousel-caption">
+                            <p>Tutorialspoint.com - Csharp</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/SQL1.png" alt="SQL"/>
+                        <div class="carousel-caption">
+                            <p>Using HiediSQL to aide our learning of SQL</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/JavaScript1.PNG" alt="JavaScript"/>
+                        <div class="carousel-caption">
+                            <p>CodeAcademy - JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/AngularJs.png" alt="AngularJS" />
+                        <div class="carousel-caption">
+                            <p>CodeAcademy - AngularJS</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/Azure.png" alt="Azure" />
+                        <div class="carousel-caption">
+                            <p>Azure Hosting Platform</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/Microsoft Visual.PNG" alt="Micosoft Visual Studio" />
+                        <div class="carousel-caption">
+                            <p>Micosoft Visual Studio 2015</p>
+                        </div>
+                    </div>
+                <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                 <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                 </a>
+                </div><!-- End Carousel inner -->
+            </div><!-- End Carousel -->
+        </section>
+    </div>
+
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
